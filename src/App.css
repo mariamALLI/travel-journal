@@ -1,0 +1,127 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 750px;
+  height: auto;
+  margin: 0 auto;
+  background-color: #0A101F;
+}
+
+.navbar {
+  background: #FF006E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.nav--text {
+  font-size: 1rem;
+  margin-left: 10px;
+}
+
+.card--img {
+  width: 100%;
+  border-radius: 10px;
+  border: 5px solid #FF006E;
+}
+
+.main--container {
+  padding: 2.5rem;
+}
+
+.loc--pin {
+  width: 20px;
+}
+
+.loc-icon-txt {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 30px;
+  margin-top: 1.5rem;
+}
+
+.loc {
+  font-size: .85rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.loc,
+.loc--title,
+.nav--text {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+}
+
+.loc--title {
+  font-size: 2.2rem;
+}
+
+.loc-date {
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.loc-des {
+  margin-top: 1.5rem;
+  line-height: 1.8;
+}
+
+.line {
+  width: 100%;
+  padding: 0.01rem;
+  background: #918E9B;
+  margin-top: 2rem;
+}
+
+.line:nth-last-child(1n + 0) {
+  display: none;
+}
+
+.loc--title,
+.loc-date {
+  text-align: center;
+}
+
+
+
+@media (min-width: 750px) {
+  
+  .main--container {
+    padding: 2.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .card--img {
+    width: 100%;
+  }
+
+  .flex--card {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .card--txt {
+    line-height: 1.5;
+  }
+
+  .loc--title,
+  .loc-date {
+    text-align:start
+  }
+
+  .loc-icon-txt {
+    margin-left: 0;
+    margin-top: 0;
+  }
+}
